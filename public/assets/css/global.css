@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --primary:#c62828;
+    --primary-dark:#8e1c1c;
+    --bg:#fafafa;
+    --text:#1f2937;
+    --muted:#6b7280;
+    --border:#e5e7eb;
+    --white:#ffffff;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    background:var(--bg);
+    color:var(--text);
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+.section{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-tag{
+    display:inline-block;
+    padding:8px 16px;
+    border-radius:50px;
+    background:#fdecec;
+    color:var(--primary);
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+.section-title{
+    font-size:40px;
+    font-family:'Lora', serif;
+    margin-bottom:18px;
+    line-height:1.2;
+}
+
+.section-subtitle{
+    color:var(--muted);
+    line-height:1.8;
+    font-size:15px;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-red{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-red:hover{
+    background:var(--primary-dark);
+}
+
+.btn-outline{
+    border:1px solid var(--border);
+    color:var(--text);
+    background:white;
+}
+
+.btn-outline:hover{
+    border-color:var(--primary);
+    color:var(--primary);
+}
+
+.btn-white{
+    background:white;
+    color:var(--text);
+}
+
+.btn-lg{
+    padding:14px 28px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: #f5f5f5;
+    color: #212121;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+.dashboard-layout {
+    display: flex;
+    min-height: 100vh;
+}

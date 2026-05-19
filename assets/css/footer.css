@@ -1,0 +1,137 @@
+/* ==========================================================================
+   MAIN FOOTER STYLES
+   ========================================================================== */
+.main-footer {
+    background: #111827; /* Warna gelap charcoal premium */
+    color: #ffffff;
+    padding: 80px 0 30px 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    border-top: 4px solid #c62828; /* Aksen garis merah khas SAPA Lampung */
+}
+
+/* Kontainer pembatas lebar halaman agar sejajar dengan navbar dan hero */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Pengaturan Grid untuk membagi 4 Kolom secara rata dari kiri ke kanan */
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+/* Kolom Pertama (Brand & Deskripsi) */
+.footer-brand-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: #c62828; /* Kotak logo merah */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.footer-name {
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.footer-desc {
+    color: #9ca3af;
+    line-height: 1.8;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Desain Judul Kolom Menu (Tautan Kilat, Informasi, Kontak) */
+.footer-col h5 {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+/* Garis bawah merah kecil dekoratif di bawah judul kolom */
+.footer-col h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: #c62828;
+}
+
+/* Pengaturan Link Menu Tautan */
+.footer-col a {
+    display: block;
+    color: #9ca3af;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+/* Efek Hover saat mouse mendekati link */
+.footer-col a:hover {
+    color: #ffffff;
+    padding-left: 4px; /* Efek bergeser sedikit ke kanan saat di-hover */
+}
+
+/* Baris Hak Cipta di Paling Bawah */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   MEDIA QUERY RESPONSIVE (Mencegah Teks Menumpuk Saat Layar HP/Tablet)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr 1fr; /* Menjadi 2 kolom di tablet */
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-grid {
+        grid-template-columns: 1fr; /* Menjadi 1 kolom berjejer ke bawah di HP */
+        gap: 24px;
+    }
+    .main-footer {
+        padding: 60px 0 30px 0;
+    }
+}
