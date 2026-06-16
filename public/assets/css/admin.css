@@ -438,8 +438,12 @@ tbody tr:hover td { background: var(--surface-2); }
 
 .pill-pending    { background: var(--amber-bg); color: var(--amber); }
 .pill-verifikasi { background: var(--accent-2); color: var(--accent); }
+.pill-menunggu   { background: var(--amber-bg); color: var(--amber); }
+.pill-diverifikasi,
+.pill-ditugaskan { background: var(--accent-2); color: var(--accent); }
 .pill-diproses   { background: var(--cyan-bg);  color: var(--cyan); }
 .pill-selesai    { background: var(--green-bg); color: var(--green); }
+.pill-ditolak    { background: #fee2e2; color: #b91c1c; }
 
 .cat-tag {
     font-size: 12px;
