@@ -595,6 +595,22 @@ tbody tr:hover{
     color:#6d28d9;
 }
 
+.pill-menunggu{
+    background:#fef3c7;
+    color:#92400e;
+}
+
+.pill-diverifikasi,
+.pill-ditugaskan{
+    background:#ede9fe;
+    color:#6d28d9;
+}
+
+.pill-ditolak{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
 .id-badge{
     background:#dcfce7;
     color:#166534;
