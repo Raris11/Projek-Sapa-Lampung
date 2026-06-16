@@ -34,4 +34,3 @@ class User extends Model
         return (bool) mysqli_query($this->db, "UPDATE users SET password = '$hash' WHERE id_user = '$userId'");
     }
 }
-
